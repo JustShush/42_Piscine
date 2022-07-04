@@ -6,19 +6,35 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 10:50:29 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/04 11:13:46 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/04 14:02:34 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	putchar(char c)
+void	ft_putchar(char e)
 {
-	write(1, &c, 1);
+	write(1, &e, 1);
 }
 
-void	ft_putchar(int nb, char c)
+void	ft_putnbr(int nb)
 {
-	nb = c;
-	write(1, &nb, 1);
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return ;
+	}
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		nb = -nb;
+	}
+	if (nb > 9)
+	{
+		ft_putnbr(nb / 10);
+		ft_putchar(nb % 10 + 48);
+	}
+	else
+		ft_putchar(nb + 48);
 }
+
