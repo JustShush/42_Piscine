@@ -1,0 +1,3 @@
+gcc -Wall -Wextra -Werror <o meu file que quero dar compile> && ./a.out 
+Para dar compile e depois correr o programa
+EX: gcc -Wall -Wextra -Werror ft_putchar.c && ./a.out
