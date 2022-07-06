@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:08:35 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/05 18:04:37 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/06 18:40:59 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,19 @@
 
 void	ft_putstr(char *str)
 {
-	while (*str)
+	while (*str != '\0')
 	{
 		write(1, str++, 1);
 	}
 }
 
-/* int	main(void)
+int main(void)
 {
-	ft_putstr("ola");
-} */
+	char	*msg;
+	char	*msg1;
+
+	msg1 = "Melhor escola: ";
+	ft_putstr(msg1);
+	msg = "42 lisboa";
+	ft_putstr(msg);
+}

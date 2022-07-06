@@ -6,23 +6,33 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 18:05:23 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/05 18:14:10 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/06 18:42:18 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
-//void	ft_putstr(char *str);
+int	ft_strlen(char *str);
 
-void	ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
-	while (*str)
+	int	comp;
+
+	comp = '0';
+	while (*str != '\0')
 	{
-		write(1, str++, 1);
+		comp++;
+		str++;
 	}
+	return (comp - 48);
 }
 
-/* int	main(void)
+int	main(void)
 {
-	ft_putstr("ola");
-} */
+	char str[] = "ola";
+	int	comp;
+
+	comp = ft_strlen(str);
+	printf("Quantidade de letras: %d\n", comp);
+} 

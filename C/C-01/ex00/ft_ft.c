@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:16:11 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/05 14:44:50 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/06 18:03:49 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,14 @@ void	ft_ft(int *nbr)
 	*nbr = 42;
 }
 
-/* int	main(){
-	int a;
-	
-	ft_ft(&a);
-	write(1, &a, 1);
+/* #include <stdio.h>
+int main(void)
+{
+	int	*pointer;   
+	int	variavel;         
+
+	pointer = &variavel;  
+	ft_ft(pointer);		
+
+printf("%d Lisboa.\n",variavel);
 } */
