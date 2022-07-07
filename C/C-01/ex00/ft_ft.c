@@ -6,27 +6,22 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:16:11 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/06 18:03:49 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/07 16:37:42 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-//void	ft_ft(int *nbr);
+//#include <unistd.h>
 
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
 
-/* #include <stdio.h>
-int main(void)
+/* int main(void)
 {
-	int	*pointer;   
-	int	variavel;         
+	int	i;
 
-	pointer = &variavel;  
-	ft_ft(pointer);		
+	ft_ft(&i);
 
-printf("%d Lisboa.\n",variavel);
+printf("%d Lisboa.\n",i);
 } */

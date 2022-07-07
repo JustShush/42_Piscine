@@ -6,13 +6,11 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:08:35 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/06 18:40:59 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/07 15:14:48 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-//void	ft_putstr(char *str);
 
 void	ft_putstr(char *str)
 {
@@ -22,7 +20,7 @@ void	ft_putstr(char *str)
 	}
 }
 
-int main(void)
+/* int main(void)
 {
 	char	*msg;
 	char	*msg1;
@@ -31,4 +29,4 @@ int main(void)
 	ft_putstr(msg1);
 	msg = "42 lisboa";
 	ft_putstr(msg);
-}
+} */

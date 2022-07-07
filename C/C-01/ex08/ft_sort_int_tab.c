@@ -6,12 +6,12 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 18:47:30 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/06 18:52:15 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/07 15:58:19 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+//#include <unistd.h>
+//#include <stdio.h>
 
 void	ft_sort_int_tab(int *tab, int size)
 {
@@ -35,13 +35,13 @@ void	ft_sort_int_tab(int *tab, int size)
 	}
 }
 
-int	main()
+/* int	main()
 {
-	int grid[3] = {9, 1, 3};
+	int grid[3] = {21, 42, 4};
 	int size = 3;
 	
 	printf("\nDesordenado: %d, %d, %d\n", grid[0], grid[1], grid[2]);
 	ft_sort_int_tab(grid, size);
 	printf("\nOrdenado: %d, %d, %d\n\n", grid[0], grid[1], grid[2]); 
 	return (0);
-}
+} */
