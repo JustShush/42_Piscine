@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 16:23:43 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/11 17:03:06 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/11 18:00:35 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_strncmp(char *s1,char *s2,unsigned int n)
 	return (a - b);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -113,4 +113,4 @@ int		main(void)
 		offset++;
 	}
 	return (0);
-}
+} */

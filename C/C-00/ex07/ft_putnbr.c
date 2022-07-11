@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 10:50:29 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/04 14:02:34 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/11 18:04:25 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,3 @@ void	ft_putnbr(int nb)
 	else
 		ft_putchar(nb + 48);
 }
-

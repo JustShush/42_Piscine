@@ -6,14 +6,10 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 15:09:53 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/11 15:34:40 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/11 18:00:14 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int	ft_strcmp(char *s1,char *s2)
 {
@@ -32,6 +28,10 @@ int	ft_strcmp(char *s1,char *s2)
 	}
 	return (a - b);
 }
+
+/* #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int	main(void)
 {
@@ -63,4 +63,4 @@ int	main(void)
 	printf("ft_strcmp(s1, s6)\t= %d\noriginal strcmp(s1, s6)\t= %d\n------------------------------\n", ft_strcmp(s1, s6), strcmp(s1, s6));
 	printf("ft_strcmp(s1, s7)\t= %d\noriginal strcmp(s1, s7)\t= %d\n------------------------------\n", ft_strcmp(s1, s7), strcmp(s1, s7));
 	return(0);
-}
+} */
