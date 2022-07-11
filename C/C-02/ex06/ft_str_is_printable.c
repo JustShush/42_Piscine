@@ -6,12 +6,12 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 12:18:53 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/08 15:18:59 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/11 19:15:09 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h>
-#include <stdlib.h> */
+#include <stdio.h>
+#include <stdlib.h>
 
 int	ft_str_is_printable(char *str)
 {
@@ -32,7 +32,7 @@ int	ft_str_is_printable(char *str)
 	return (1);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	char *str1;
 	char *str2;
@@ -51,4 +51,4 @@ int	ft_str_is_printable(char *str)
 	printf("str2: %s, is_alpha: %d\n", str2, ft_str_is_printable(str2));
 	printf("str3: %s, is_alpha: %d\n", str3, ft_str_is_printable(str3));
 	printf("str4: %s, is_alpha: %d\n", str4, ft_str_is_printable(str4));
-} */
+}
