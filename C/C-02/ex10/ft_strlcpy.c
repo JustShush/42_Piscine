@@ -6,15 +6,15 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:07:45 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/13 15:54:36 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/13 16:21:04 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <unistd.h>
+#include <unistd.h>
 #include <stdio.h>
-#include <stdlib.h> */
+#include <stdlib.h>
 
-int	strlen(char *src)
+int	ft_strlen(char *src)
 {
 	int	i;
 	int	comp;
@@ -46,10 +46,10 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 		}
 		i++;
 	}
-	return (strlen(src));
+	return (ft_strlen(src));
 }
 
-/* unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
 int				main(void)
 {
@@ -65,4 +65,4 @@ int				main(void)
 	printf("dest: %s\n", dest);
 	printf("src_size: %d\n", src_size);
 	return(0);
-} */
+}
