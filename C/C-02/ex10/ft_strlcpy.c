@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:07:45 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/11 15:02:57 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/13 15:54:36 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	}
 	return (strlen(src));
 }
-
 
 /* unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
