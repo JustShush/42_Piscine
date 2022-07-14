@@ -6,11 +6,11 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 12:20:53 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/14 13:51:52 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/14 16:06:32 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 
 int	ft_atoi(char *str)
 {
@@ -46,12 +46,12 @@ int	ft_atoi(char *str)
 		return (base * sign);
 	}
 }
-int main()
+
+/* int main()
 {
-    char str[] = "  -123";
-   
-    // Functional Code
-    int val = ft_atoi(str);
-    printf("%d ", val);
-    return 0;
-}
+	char str[] = "  -123";
+
+	int val = ft_atoi(str);
+	printf("%d ", val);
+	return 0;
+} */
