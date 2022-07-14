@@ -6,27 +6,24 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:07:45 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/13 16:21:04 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/14 15:36:21 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+/* #include <unistd.h>
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> */
 
 int	ft_strlen(char *src)
 {
 	int	i;
-	int	comp;
 
 	i = 0;
-	comp = 0;
 	while (src[i] != '\0')
 	{
-		comp++;
 		i++;
 	}
-	return (comp);
+	return (i);
 }
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
@@ -49,7 +46,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	return (ft_strlen(src));
 }
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+/* unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
 int				main(void)
 {
@@ -65,4 +62,4 @@ int				main(void)
 	printf("dest: %s\n", dest);
 	printf("src_size: %d\n", src_size);
 	return(0);
-}
+} */

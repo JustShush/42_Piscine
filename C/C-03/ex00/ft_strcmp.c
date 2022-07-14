@@ -6,13 +6,13 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 15:09:53 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/13 15:43:41 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/14 12:57:23 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	int				i;
+	unsigned int	i;
 	unsigned char	a;
 	unsigned char	b;
 

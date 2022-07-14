@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 10:43:37 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/08 15:17:57 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/13 19:09:43 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 65 && str[i] <= 90 || str[i] >= 97 && str[i] <= 122)
+		if ((str[i] >= 65 && str[i] <= 90) || (str[i] >= 97 && str[i] <= 122))
 		{
 			i++;
 		}

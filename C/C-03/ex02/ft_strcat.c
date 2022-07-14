@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 18:20:59 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/13 15:35:37 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/14 12:59:50 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ char	*ft_strcat(char *dest, char *src)
 	while (dest[i] != '\0')
 		i++;
 	{
-		while (src[i] != '\0')
+		while (src[j] != '\0')
 		{
-			dest[i + j] = src[i];
+			dest[i + j] = src[j];
 			j++;
 		}
 	}

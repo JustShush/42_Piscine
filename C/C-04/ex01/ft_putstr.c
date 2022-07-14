@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:02:39 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/13 17:09:45 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/14 12:26:32 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,20 +20,4 @@ void	ft_putstr(char *str)
 	}
 }
 
-void	ft_putstr(char *str);
-
-int	main(void)
-{
-	char *str;
-
-	str = "";
-	ft_putstr(str);
-	write(1, "\n", 1);
-	str = "This is a test string.";
-	ft_putstr(str);
-	write(1, "\n", 1);
-	str = "This is a gianormous test string, testing to see whatever happens in here....";
-	ft_putstr(str);
-	write(1, "\n", 1);
-	return (0);
-}
+// https://github.com/eduardomosko/fake-moulinnete/blob/main/c04-tests/ex01.c

@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 13:56:26 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/13 16:18:32 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/13 19:09:32 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ char	*ft_strcapitalize(char *str)
 		}
 		if (str[i] >= 97 && str[i] <= 122)
 		{
-			if (str[i - 1] < 48 || str[i - 1] > 57 && str[i] < 65)
+			if (str[i - 1] < 48 || (str[i - 1] > 57 && str[i] < 65))
 			{
 				str[i] = str[i] - 32;
 			}
-			if (str[i - 1] > 90 && str[i - 1] < 97 || str[i - 1] > 122)
+			if ((str[i - 1] > 90 && str[i - 1] < 97) || str[i - 1] > 122)
 			{
 				str[i] = str[i] + 32;
 			}

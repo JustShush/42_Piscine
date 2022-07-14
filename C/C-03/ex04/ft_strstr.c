@@ -1,31 +1,84 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 15:48:00 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/13 15:48:49 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/14 13:15:26 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncat(char *dest, char *str, unsigned int nb)
+void	restart(int *counter, int *find, int *target)
 {
-	unsigned int	i;
-	unsigned int	j;
+	*find = 0;
+	*counter = *target;
+}
 
+char	*ft_strstr(char *str, char *to_find)
+{
+	int	count;
+	int	i;
+	int	j;
+
+	count = 0;
 	i = 0;
-	j = 0;
-	while (dest[i] != '\0')
-		i++;
+	if (to_find[count] == '\0')
+		return (str);
+	while (str[count] != '\0')
 	{
-		while (src[i] != '\0' && (j < nb))
+		j = count;
+		while (str[count] == to_find[i] && to_find[i] != '\0')
 		{
-			dest[i + j] = src[i];
-			j++;
+			i++;
+			count++;
 		}
+		if (to_find[i] == '\0')
+			return (&str[j]);
+		else 
+			restart(&count, &i, &j);
+		count++;
 	}
-	dest[i + j] = '\0';
-	return (dest);
+	return (0);
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char	*ft_strstr(char *str, char *to_find);
+
+int	main(void)
+{
+	char *str;
+	char *to_find;
+	char *buff;
+	char *ft_buff;
+
+	str = strcpy(calloc(11, sizeof(char)), "alo galera");
+	to_find = strcpy(calloc(7, sizeof(char)), "galera");
+	buff = strstr(str, to_find);
+	ft_buff = ft_strstr(str, to_find);
+	if (buff != ft_buff)
+		printf("[1] KO, substrings don't match(expected:%s, got:%s)\n", buff, ft_buff); 
+	else
+		printf("[1] OK. expected: %s result: %s\n", buff, ft_buff);
+	str = strcpy(calloc(11, sizeof(char)), "alo galera");
+	to_find = strcpy(calloc(7, sizeof(char)), "galerA");
+	buff = strstr(str, to_find);
+	ft_buff = ft_strstr(str, to_find);
+	if (buff != ft_buff)
+		printf("[2] KO, substrings don't match(expected:%s, got:%s)\n", buff, ft_buff); 
+	else
+		printf("[2] OK. expected: %s result: %s\n", buff, ft_buff);
+	str = strcpy(calloc(11, sizeof(char)), "alo galera");
+	to_find = strcpy(calloc(1, sizeof(char)), "");
+	buff = strstr(str, to_find);
+	ft_buff = ft_strstr(str, to_find);
+	if (buff != ft_buff)
+		printf("[2] KO, substrings don't match(expected:%s, got:%s)\n", buff, ft_buff); 
+	else
+		printf("[2] OK. expected: %s result: %s\n", buff, ft_buff);
+	return (0);
 }

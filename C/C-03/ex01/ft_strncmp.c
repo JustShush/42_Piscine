@@ -6,16 +6,15 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 16:23:43 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/13 15:44:16 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/14 12:57:46 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-int	ft_strncmp(char *s1,char *s2,unsigned int n)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int i;
-	unsigned char a;
-	unsigned char b;
+	unsigned int	i;
+	unsigned char	a;
+	unsigned char	b;
 
 	i = 0;
 	if (n != 0)
