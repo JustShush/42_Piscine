@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:07:45 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/14 15:36:21 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/15 11:21:52 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int	ft_strlen(char *src)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (src[i] != '\0')
@@ -33,7 +33,11 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	i = 0;
 	while (src[i] != '\0')
 	{
-		if (i < size -1)
+		if (size == 0)
+		{
+			return (ft_strlen(src));
+		}
+		if (i < size - 1)
 		{
 			dest[i] = src[i];
 		}
