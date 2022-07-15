@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:47:00 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/14 12:26:49 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/14 16:13:12 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,28 +39,6 @@ void	ft_putnbr(int nb)
 	}
 	else
 		ft_putchar(nb + 48);
-}
-#include <limits.h>
-#include <stdio.h>
-
-void	ft_putnbr(int nb);
-
-int	main(void)
-{
-	write(1, "-1: ", 4);
-	ft_putnbr(-1);
-	write(1, "\n1: ", 4);
-	ft_putnbr(1);
-	write(1, "\n-10: ", 6);
-	ft_putnbr(-10);
-	write(1, "\n10: ", 5);
-	ft_putnbr(10);
-	write(1, "\nINT_MAX: ", 10);
-	ft_putnbr(INT_MAX);
-	write(1, "\nINT_MIN: ", 10);
-	ft_putnbr(INT_MIN);
-	write(1, "\n", 1);
-	return (0);
 }
 
 // https://github.com/eduardomosko/fake-moulinnete/blob/main/c04-tests/ex02.c

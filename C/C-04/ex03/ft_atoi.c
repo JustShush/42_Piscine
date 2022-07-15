@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 12:20:53 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/14 16:06:32 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/14 17:37:09 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,42 +14,34 @@
 
 int	ft_atoi(char *str)
 {
-	int sign;
-	int base;
-	int i;
+	int	sign;
+	int	numb;
+	int	i;
 
-	sign = 1;
-	base = 0;
+	sign = 0;
+	numb = 0;
 	i = 0;
-	while (str[i] == ' ')
+	while ((str[i] > 8 && str[i] < 14) || (str[i] == 32))
+		i++;
+	while ((str[i] != '\0') && (str[i] == '+' || str[i] == '-'))
 	{
+		if (str[i] == '-')
+			sign++;
 		i++;
 	}
-	if (str[i] == '-' || str[i] == '+')
+	while ((str[i] != '\0') && (str[i] >= 48 && str[i] <= 57))
 	{
-		sign = 1 - 2 * (str[i++] == '-');
+		numb = numb * 10 + str[i] -48;
+		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		if (base > 2147483647 / 10 || (base == 2147483647 / 10 && str[i] - '0' > 7))
-		{
-			if (sign == 1)
-			{
-				return (2147483647);
-			}
-			else
-			{
-				return (-2147483647);
-			}
-			base = 10 * base + (str[i++] - '0');
-		}
-		return (base * sign);
-	}
+	if (sign % 2 != 0)
+		return (numb * -1);
+	return (numb);
 }
 
 /* int main()
 {
-	char str[] = "  -123";
+	char str[] = "  -2147483647";
 
 	int val = ft_atoi(str);
 	printf("%d ", val);
