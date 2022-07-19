@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:47:00 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/14 16:13:12 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/19 19:00:16 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,3 @@ void	ft_putnbr(int nb)
 	else
 		ft_putchar(nb + 48);
 }
-
-// https://github.com/eduardomosko/fake-moulinnete/blob/main/c04-tests/ex02.c

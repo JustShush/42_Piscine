@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 12:20:53 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/14 17:37:09 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/18 17:48:02 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(char *str)
 	}
 	while ((str[i] != '\0') && (str[i] >= 48 && str[i] <= 57))
 	{
-		numb = numb * 10 + str[i] -48;
+		numb = numb * 10 + str[i] - 48;
 		i++;
 	}
 	if (sign % 2 != 0)
@@ -41,9 +41,9 @@ int	ft_atoi(char *str)
 
 /* int main()
 {
-	char str[] = "  -2147483647";
+	char str[] = "  -+--1";
 
 	int val = ft_atoi(str);
-	printf("%d ", val);
+	printf("%d", val);
 	return 0;
 } */

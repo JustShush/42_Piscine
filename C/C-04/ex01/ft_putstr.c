@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:02:39 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/14 12:26:32 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/19 19:00:12 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,3 @@ void	ft_putstr(char *str)
 		write(1, str++, 1);
 	}
 }
-
-// https://github.com/eduardomosko/fake-moulinnete/blob/main/c04-tests/ex01.c
