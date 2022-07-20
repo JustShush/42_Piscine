@@ -6,13 +6,10 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:47:00 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/19 19:00:16 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/20 15:21:49 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <limits.h>
-#include <unistd.h>
-#include <stdio.h> */
 #include <unistd.h>
 
 void	ft_putchar(char e)
