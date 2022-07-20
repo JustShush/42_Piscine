@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 16:11:35 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/14 18:16:05 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/19 17:22:35 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int	main(int argc, char **argv)
 {
-	(void)argc;
-	int	i;
+	int		i;
 	char	*str;
 
 	str = argv[0];
@@ -24,18 +23,6 @@ int	main(int argc, char **argv)
 	{
 		write(1, str++, 1);
 	}
+	write(1, "\n", 1);
+	(void)argc;
 }
-
-
-/* #include <unistd.h>
-int main(int argc, char **argv)
-{
-    int     i;
-    char    *str;    i = 0;
-    str = argv[0];
-    while (str[i])
-    {
-        write(1, str++, 1);
-    }
-    (void)argc;
-} */
