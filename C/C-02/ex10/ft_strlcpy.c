@@ -6,13 +6,13 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:07:45 by dimarque          #+#    #+#             */
-/*   Updated: 2022/07/15 11:21:52 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/19 17:15:44 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <unistd.h>
+#include <unistd.h>
 #include <stdio.h>
-#include <stdlib.h> */
+#include <stdlib.h>
 
 int	ft_strlen(char *src)
 {
@@ -50,7 +50,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	return (ft_strlen(src));
 }
 
-/* unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
 int				main(void)
 {
@@ -66,4 +66,4 @@ int				main(void)
 	printf("dest: %s\n", dest);
 	printf("src_size: %d\n", src_size);
 	return(0);
-} */
+}
