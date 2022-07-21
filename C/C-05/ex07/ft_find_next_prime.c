@@ -6,7 +6,7 @@
 /*   By: dimarque <dimarque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 10:03:57 by lcerquei          #+#    #+#             */
-/*   Updated: 2022/07/15 15:15:03 by dimarque         ###   ########.fr       */
+/*   Updated: 2022/07/21 11:05:03 by dimarque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	ft_find_next_prime(int nb)
 	return (0);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	printf("%d", ft_find_next_prime(7));
-}
+} */
