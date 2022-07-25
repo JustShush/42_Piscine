@@ -3,7 +3,6 @@
   Please open an issue on github if you find anything incorrect.<br/>
   If you have any tips I would like to hear, any feedback is appreciated. Thank you. <br/>
 `Don't Copy, Learn.` <br />
-
 <a href="https://github.com/JustShush/42_Lisboa" target="_blank"><img width="30" src="https://raw.githubusercontent.com/ItsAnunesS/ItsAnunesS/main/src/img/parrots/laptop_parrot.gif"></a> > curl parrot.live
 
 # READ THIS BEFORE YOU PASS THE EXAM <br/>
